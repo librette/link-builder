@@ -1,0 +1,35 @@
+{
+	"name": "librette/link-builder",
+	"keywords": ["nette", "librette", "link", "application"],
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "David Matějka",
+			"homepage": "http://www.matej21.cz"
+		}
+	],
+	"require": {
+		"nette/application": "~2.2",
+		"nette/utils": "~2.2",
+		"nette/http": "~2.2"
+	},
+	"suggest": {
+		"nette/di": "",
+		"latte/latte": ""
+	},
+	"require-dev": {
+		"nette/nette": "~2.2",
+		"nette/bootstrap": "~2.2",
+		"latte/latte": "~2.2",
+		"nette/neon": "~2.2",
+		"nette/php-generator": "~2.2",
+		"nette/tester": "@dev",
+		"tracy/tracy": "~2.2@dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"Librette\\LinkBuilder\\": "src/"
+		},
+		"files": ["src/exceptions.php"]
+	}
+}

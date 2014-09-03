@@ -1,0 +1,10 @@
+extensions:
+	linkBuilder: Librette\LinkBuilder\DI\LinkBuilderExtension
+
+linkBuilder:
+	fallbackUrl: http://example.com
+
+nette:
+	routing:
+		routes:
+			/<presenter>/<action>: Foo:bar
