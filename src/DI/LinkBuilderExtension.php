@@ -36,7 +36,7 @@ class LinkBuilderExtension extends CompilerExtension
 			$engine = $this->getContainerBuilder()->getDefinition('nette.latteFactory');
 			$engine->addSetup('?->onCompile[] = function($engine) { \Librette\LinkBuilder\Latte\LinkMacroSet::install($engine->getCompiler()); }', ['@self']);
 			$engine->addSetup('addFilter', ['getLinkBuilder',
-					new PhpLiteral('function() { return $this->getByType("\\Librette\\LinkBuilder\\LinkBuilder");}')]);
+					new PhpLiteral('function() { return $this->getByType("Librette\\LinkBuilder\\LinkBuilder");}')]);
 		}
 	}
 
