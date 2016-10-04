@@ -33,7 +33,8 @@ class LinkBuilderExtension extends CompilerExtension
 	{
 		$config = $this->getConfig($this->defaults);
 		if ($config['registerMacro'] === TRUE) {
-			$engine = $this->getContainerBuilder()->getDefinition('nette.latteFactory');
+			$engine = $this->getContainerBuilder()->getDefinition('latte.latteFactory');
+			$engine->addSetup('addProvider', ['linkBuilder', $this->prefix('@builder')]);
 			$engine->addSetup('?->onCompile[] = function($engine) { \Librette\LinkBuilder\Latte\LinkMacroSet::install($engine->getCompiler()); }', ['@self']);
 			$engine->addSetup('addFilter', ['getLinkBuilder',
 					new PhpLiteral('function() { return $this->getByType("Librette\\LinkBuilder\\LinkBuilder");}')]);

@@ -37,10 +37,7 @@ class LinkMacroSet extends MacroSet
 		if(isset(' . ($node->name === 'plink' ? '$_presenter' : '$_control') . ')) {
 			$_currentLinkBuilder = ' . ($node->name === 'plink' ? '$_presenter' : '$_control') . ';
 		} else {
-			if(!isset($_linkBuilder)) {
-				$_linkBuilder = $template->getLinkBuilder();
-			}
-			$_currentLinkBuilder = $_linkBuilder;
+			$_currentLinkBuilder = $template->global->linkBuilder;
 		}
 		echo %escape(%modify($_currentLinkBuilder->link(%node.word, %node.array?)));
 		');

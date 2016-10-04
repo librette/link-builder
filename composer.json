@@ -9,22 +9,22 @@
 		}
 	],
 	"require": {
-		"nette/application": "~2.2",
-		"nette/utils": "~2.2",
-		"nette/http": "~2.2"
+		"nette/application": "~2.4",
+		"nette/utils": "~2.4",
+		"nette/http": "~2.4"
 	},
 	"suggest": {
 		"nette/di": "",
 		"latte/latte": ""
 	},
 	"require-dev": {
-		"nette/nette": "~2.2",
-		"nette/bootstrap": "~2.2",
-		"latte/latte": "~2.2",
-		"nette/neon": "~2.2",
-		"nette/php-generator": "~2.2",
+		"nette/nette": "~2.4",
+		"nette/bootstrap": "~2.4",
+		"latte/latte": "~2.4",
+		"nette/neon": "~2.4",
+		"nette/php-generator": "~2.4",
 		"nette/tester": "@dev",
-		"tracy/tracy": "~2.2@dev"
+		"tracy/tracy": "~2.4@dev"
 	},
 	"autoload": {
 		"psr-4": {
