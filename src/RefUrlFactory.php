@@ -3,12 +3,11 @@ namespace Librette\LinkBuilder;
 
 use Nette\Http\Request;
 use Nette\Http\Url;
-use Nette\Object;
 
 /**
  * @author David Matějka
  */
-class RefUrlFactory extends Object
+class RefUrlFactory
 {
 
 	/** @var \Nette\Http\Url */

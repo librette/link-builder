@@ -5,13 +5,12 @@ use Nette\Application;
 use Nette\Application\IRouter;
 use Nette\Application\UI\Presenter;
 use Nette\Http\Url;
-use Nette\Object;
 
 /**
  * @author David Matějka
  * @author David Grudl
  */
-class LinkBuilder extends Object
+class LinkBuilder
 {
 
 	/** @var \Nette\Application\IRouter */
